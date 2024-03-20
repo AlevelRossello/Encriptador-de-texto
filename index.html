@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>ENCRIPTADOR DE TEXTOS</h1>
+        </header>
+
+        <main>
+            <section class="contenedor">
+                <form>
+                    <label for="ingresarTexto">Texto a convertir:</label>
+                    <input class="caja" type="text" name="inputTexto" id="inputTexto" placeholder="Escribe tu texto en minúsculas, sin carácteres especiales ni tildes.">
+                    <input class="boton" value= "Encriptar" id="botonEnc" onclick="encriptador()">
+                    <input class="boton" value= "Desencriptar" id="botonDes" onclick="desencriptador()">
+                </form>
+            </section>
+
+            <section class="contenedor">
+                <label>Resultado:</label>            
+                <input class="caja" type= "text" id="resultado"></input>
+                <input class="boton" value="Copiar" onclick="copiarPortapapeles()">
+            </section>
+        </main>
+        <footer>
+            <p><b>Proyecto realizado por Alejandra Vélez para Formación Gpo 6 ONE | Alura Latam</b></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
